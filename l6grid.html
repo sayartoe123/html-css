@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Grid</title>
+        <style type="text/css">
+
+            body{
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container{
+                width: 1200px;
+                background-color: grey;
+
+                display: grid;
+                /* grid-template-columns: auto;
+                grid-template-columns: auto auto;
+                grid-template-columns: auto auto auto;
+                grid-template-columns: auto auto auto auto;
+                grid-template-columns: auto auto auto auto auto; */
+
+                grid-template-columns: 100px;
+                grid-template-columns: 120px 300px;
+                grid-template-columns: 100px 300px 600px 200px;
+
+                /* grid-gap: 20px;
+                grid-gap: 10px 20px;
+
+                grid-column-gap: 10px;
+                grid-row-gap: 20px ;
+                ma use tot bu */
+
+                gap: 10px;
+                column-gap: 30px;
+                row-gap: 20px;
+
+
+                
+            }
+
+            .container > *{
+                /* width: 200px; */
+                height: 100px;
+                background-color: aqua;
+            }
+
+            .container div:nth-of-type(odd){
+                background-color: steelblue;
+            }
+
+            .container div:nth-of-type(even){
+                background-color: skyblue;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="div">This is div1</div>
+            <div class="div">This is div2</div>
+            <div class="div">This is div3</div>
+            <div class="div">This is div4</div>
+            <div class="div">This is div5</div>
+            <div class="div">This is div6</div>
+            <div class="div">This is div7</div>
+            <div class="div">This is div8</div>
+            <div class="div">This is div9</div>
+            <div class="div">This is div10</div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TrsformOrigin</title>
+    </head>
+    <style type="text/css">
+
+        body{
+            height: 100vh;
+            background-color: steelblue;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            display: grid;
+            place-items: center;
+        }
+
+        img{
+            width: 400px;
+            height: 250px;
+
+            transform-origin: center;
+            transform-origin: top;
+            transform-origin: bottom;
+            transform-origin: left;
+            transform-origin: right;
+            transform-origin: left top;
+            transform-origin: right top;
+            transform-origin: left bottom;
+            transform-origin: right bottom;
+            transform-origin: 0;
+            transform-origin: left center;
+            transform-origin: 50%;
+            transform-origin: 100%;
+            transform-origin: right center;
+
+            transform-origin: 200px;
+            transform-origin: 100px;
+            transform-origin: 400px;
+
+            /* transform-origin: 0 0; left top
+            transform-origin: 0 50%; left center */
+
+            transform-origin: 50% 50%;
+            transform-origin: 200px 250px;
+
+
+
+
+            transition: transform 2s linear;
+        }
+
+        img:hover{
+            transform: rotate(45deg);
+        }
+       
+
+
+
+    </style>
+    <body>
+        <div>
+            <img src="./../Css/img/fav/chelsea.jpg" alt="chelsea"/>
+        </div>
+
+        
+
+        
+
+       
+
+
+
+
+    </body>
+</html>

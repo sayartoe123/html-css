@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trsform with Rotate</title>
+    </head>
+    <style>
+        .container{
+            width: 1200px;
+            background-color: #c1c1c1;
+            margin: 3rem 0;
+            /* 1rem(root element font-size)=16px */
+        }
+
+        .container .square{
+            width: 150px;
+            height: 50px;
+            background-color: red;
+            color: #fff;
+            font-size: 20px;
+
+            text-align: center;
+            line-height: 50px;
+
+            border-radius: 30px;
+
+            transition-property: transform;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+           
+        }
+
+        #rotate:hover{
+            /* rotate(anglexy); */
+            transform: rotate(-45deg);
+            transform: rotate(-2turn);
+
+            /* 400grad = 360deg = 1turn */
+            transform: rotate(400grad);
+        }
+
+        #rotatex:hover{
+            transform: rotateX(-45deg);
+        }
+
+        #rotatey:hover{
+            transform: rotateY(1turn);
+        }
+
+
+    </style>
+    <body>
+
+        <div class="container">
+            <div id="rotate" class="square">DIV1 XY</div>
+        </div>
+
+        <div class="container">
+            <div id="rotatex" class="square">DIV1 X</div>
+        </div>
+
+        <div class="container">
+            <div id="rotatey" class="square">DIV1 Y</div>
+        </div>
+
+        
+
+       
+
+
+
+
+    </body>
+</html>

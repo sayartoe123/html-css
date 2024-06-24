@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TrsformScale</title>
+    </head>
+    <style>
+        .container{
+            width: 1200px;
+            background-color: #c1c1c1;
+            margin: 3rem 0;
+            /* 1rem(root element font-size)=16px */
+        }
+
+        .container .square{
+            width: 150px;
+            height: 70px;
+            background-color: red;
+            color: #fff;
+            font-size: 20px;
+
+            text-align: center;
+            line-height: 50px;
+
+            border-radius: 30px;
+
+            transition-property: transform;
+            transition-duration: .5s;
+            transition-timing-function: linear;
+           
+        }
+
+        #scale:hover{
+            transform: scale(0);
+            transform: scale(1);
+            /* default ka 1 */
+            transform: scale(2);
+        }
+
+        #scalexy:hover{
+            transform: scale(1,2);
+        }
+
+        #scalex:hover{
+            transform: scaleX(3);
+            transform: scaleX(.3);
+        }
+        
+        #scaley:hover{
+            transform: scaleY(3);
+        }
+
+
+
+    </style>
+    <body>
+
+        <div class="container">
+            <div id="scale" class="square">DIV1 XY</div>
+        </div>
+
+        <div class="container">
+            <div id="scalexy" class="square">DIV2 X,Y</div>
+        </div>
+
+        <div class="container">
+            <div id="scalex" class="square">DIV3 X</div>
+        </div>
+
+        <div class="container">
+            <div id="scaley" class="square">DIV4 Y</div>
+        </div>
+
+        
+
+       
+
+
+
+
+    </body>
+</html>

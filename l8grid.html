@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid 2</title>
+        <style>
+
+            body{
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container{
+                width: 1200px;
+                background-color: #999;
+
+                display: grid;
+
+                grid-template-columns: repeat(1,100px);
+                grid-template-columns: repeat(2,300px);
+                grid-template-columns: repeat(6,200px);
+                /* ae shae ka column ae yay ae twat ae nout ka yu mae nay yar */
+
+                grid-template-columns: repeat(auto-fill,100px);
+                grid-template-columns: repeat(auto-fill,600px);
+                grid-template-columns: repeat(auto-fill,900px);
+
+                grid-template-columns: repeat(1,1fr);
+                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(3,1fr);
+
+                grid-template-columns:1fr repeat(2,100px);
+                grid-template-columns:1fr repeat(2,1fr) ;
+                grid-template-columns:100px 100px repeat(3,1fr) ;
+
+                grid-template-columns: repeat(2,100px 1fr);
+                grid-template-columns: repeat(4,29px 1fr);
+                grid-template-columns: repeat(3,1fr 100px);
+
+                grid-template-columns: repeat(2,100px 200px 1fr);
+                grid-template-columns: repeat(3,200px 100px 1fr);
+
+                
+            }
+
+            .container > *{
+                /* /* width: 200px; */
+                height: 100px;
+                
+
+
+            }
+
+            .container div:nth-of-type(even){
+                background-color: blueviolet;
+            }
+
+            .container div:nth-of-type(odd){
+                background-color: blue;
+            }
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+
+                <div class="div">This is div1</div>
+                <div class="div">This is div2</div>
+                <div class="div">This is div3</div>
+                <div class="div">This is div4</div>
+                <div class="div">This is div5</div>
+                <div class="div">This is div6</div>
+                <div class="div">This is div7</div>
+                <div class="div">This is div8</div>
+                <div class="div">This is div9</div>
+                <div class="div">This is div10</div>
+               
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

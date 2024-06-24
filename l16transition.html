@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transition</title>
+    </head>
+    <style>
+        .div1{
+            width: 300px;
+            height: 100px;
+            background-color: steelblue;
+            color: #fff;
+            font-size: 20px;
+
+            text-align: center;
+
+            /* vertical center phit yin sar 1 ku pl shi ya ml */
+            /* line-height: 100px; */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* short-hand */
+            /* transition: background-color 5s; */
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            transition-duration: 3000ms;
+            
+        }
+
+        .div1:hover{
+            background-color: green;
+        }
+
+        .div2{
+            width: 300px;
+            height: 100px;
+            background-color: steelblue;
+            color: #fff;
+            font-size: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* transition: all 2s; */
+           /* transition-property: all;
+           transition-duration: 2s;
+           transition-duration: 5s; */
+
+           /* transition-property: width;
+           transition-duration: 2s; */
+           
+           /* transition-property: width,background-color;
+           transition-duration: 2s;
+           transition-delay: 4s; */
+
+           /* transition: width 1s,background-color 3s,color 6s; */
+           
+
+        }
+
+        .div2:hover{
+            width: 500px;
+            background-color: #c1c1c1;
+            color: #000;
+        }
+
+    </style>
+    <body>
+        <div class="div1">
+            Css Transition DIV1
+        </div>
+
+        <hr/>
+
+        <div class="div2">
+            Css Transition DIV2
+        </div>
+
+        <hr/>
+
+
+
+
+    </body>
+</html>

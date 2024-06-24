@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spinner</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style type="text/css">
+
+            body{
+                font-family: sans-serif;
+                height: 100vh;
+                background-color: tomato;
+                
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+               padding: 0;
+               margin: 0;
+
+            }
+
+            .container{
+                width: 500px;
+                height: 100px;
+                background-color: grey;
+                border-radius: 10px;
+
+                overflow: hidden;
+
+                position: relative;
+            }
+
+            .container div{
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                
+
+                /* for text */
+                white-space: nowrap; 
+
+                /* for div
+                flex-wrap: nowrap; */
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .container div:nth-of-type(2){
+                width: 50%;
+                background-color: steelblue;
+            }
+
+            .container div h1{
+                color: #fff;
+                line-height: 50px;
+
+                position: absolute;
+                left: 0;
+                top: 0;
+
+               animation-name: myani;
+               animation-duration: 10s;
+               animation-iteration-count: infinite;
+               animation-timing-function: linear;
+               animation-direction: alternate;
+            }
+
+            .container div:nth-of-type(2) h1{
+                /* vendor prefix */
+                -webkit-text-stroke:1px ;
+                -webkit-text-stroke-color:#fff ;
+                color: transparent;
+            }
+
+            @keyframes myani{
+                from{
+                    transform: translate(100%);
+                }
+
+                to{
+                    transform: translate(-100%);
+                }
+            }
+
+            
+            
+
+
+            
+
+    
+
+        </style>
+    </head>
+    <body>
+       <div class="container">
+        <div> <h1>Welcome to Our CSS Animation Class</h1></div>
+        <div> <h1>Welcome to Our CSS Animation Class</h1></div>
+
+       </div>
+     
+        
+    </body>
+</html>

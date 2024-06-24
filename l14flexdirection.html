@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Direction</title>
+        <style type="text/css">
+            body{
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container{
+                width: 1200px;
+                height: 500px;
+                background-color: #c1c1c1;
+
+                /* justify-content: start;
+               left bat ko kat
+               justify-content: end;
+               right bat ko kat
+                */
+                
+                /* justify-content: space-between;
+                /* ta ku nae ta ku ae nyi ae mya kan twr ml */
+                /* justify-content: space-around; */ 
+                /* ta ku nae ta ku ae nyi ae mya kan twr ml margin tot pr ml */
+
+                
+                /* flex-wrap: wrap; */
+                /* ma sant yin out ko sin say chin loh */
+
+                /* display: flex;
+                align-items: start;
+                align-items: end;
+                align-items: center; */
+
+                /* display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column; */
+                /* column ae tine center yout chin yin flex direction ko use tl
+                flex direction pr yin justify-content: center; ka vertical ae twat phit pee align-item ka :horizontal ae twat phit kone tl */
+
+                /* display: flex;
+                /* flex-direction: column; */
+                /* flex-direction: row;
+                justify-content: center;
+                align-items: center; */
+                /* flex-direction: row; ka tot pone mhan ae tine pl */
+
+                /* display: flex;*/
+                /* flex-direction: column-reverse; */
+                /* column ae lite reverse */
+                /* flex-direction: row-reverse;  */
+
+                /* display: flex;
+                flex-wrap: wrap; */
+
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+
+
+
+            
+            }
+
+            .container > *{
+                width: 300px;
+                height: 100px;
+            }
+
+            .container div:nth-of-type(even){
+                background-color: steelblue;
+            }
+
+            .container div:nth-of-type(odd){
+                background-color: skyblue;
+            }
+
+            .div1{
+            }
+
+            .div2{
+            }
+
+            .div3{
+            }
+
+            
+
+
+    
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="div1">This is div1</div>
+            <div class="div2">This is div2</div>
+            <div class="div3">This is div3</div>
+            <div class="div4">This is div4</div>
+            <div class="div5">This is div5</div>
+            <div class="div6">This is div6</div>
+            <div class="div7">This is div7</div>
+            <div class="div8">This is div8</div>
+            <div class="div9">This is div9</div>
+            <div class="div10">This is div10</div>
+            
+
+    </div>
+    </body>
+</html>

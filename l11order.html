@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order</title>
+        <style type="text/css">
+            body{
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container{
+                width: 1200px;
+                height: 500px;
+                background-color: red;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                flex-wrap: wrap;
+                /* ma sant yin out ko sin say chin loh */
+
+            
+            }
+
+            .container > *{
+                width: 300px;
+                height: 100px;
+            }
+
+            .container div:nth-of-type(even){
+                background-color: steelblue;
+            }
+
+            .container div:nth-of-type(odd){
+                background-color: skyblue;
+            }
+
+            .div1{
+                order: 2;
+            }
+
+            .div2{
+                order: 3;
+            }
+
+            .div3{
+                order: 1;
+            }
+
+            .div4{
+                order: 6;
+            }
+
+            .div5{
+                order: 4;
+            }
+
+
+            .div6{
+                order: 5;
+            }
+
+
+            .div7{
+                order: 8;
+            }
+
+
+            .div8{
+                order: 7;
+            }
+
+            .div9{
+                order: 10;
+            }
+
+            .div10{
+                order: 9;
+            }
+
+
+    
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="div1">This is div1</div>
+            <div class="div2">This is div2</div>
+            <div class="div3">This is div3</div>
+            <div class="div4">This is div4</div>
+            <div class="div5">This is div5</div>
+            <div class="div6">This is div6</div>
+            <div class="div7">This is div7</div>
+            <div class="div8">This is div8</div>
+            <div class="div9">This is div9</div>
+            <div class="div10">This is div10</div>  
+
+    </div>
+    </body>
+</html>

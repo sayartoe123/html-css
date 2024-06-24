@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Key Frames</title>
+        <style type="text/css">
+            body{
+                padding: 0;
+                margin: 0;
+                background-color: #242424;
+            }
+
+            .box{
+                width: 150px;
+                height: 150px;
+                background-color: steelblue;
+
+
+                animation-name: myani;
+                animation-duration: 3000ms;
+            }
+
+            @keyframes myani{
+                0%{
+                    transform: translate(0px);
+                }
+
+                50%{
+                    transform: translate(400px);
+                }
+
+                100%{
+                    /* transform: translate(400px,800px); */
+                    transform: translateX(400px) translateY(800px);
+                }
+
+                
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>

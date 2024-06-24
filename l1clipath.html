@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clip Path</title>
+        <style type="text/css">
+
+            .square{
+                width: 100px;
+                height: 100px;
+                background-color: steelblue;
+            }
+
+            .circle{
+                width: 100px;
+                height: 100px;
+                background-color: steelblue;
+                border-radius: 50%;
+            }
+
+            .triangle{
+                width: 0px;
+                height: 0px;
+                /* background-color: black; */
+               
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                border-bottom: 100px solid steelblue;
+            }
+
+            .squareshape{
+                width: 100px;
+                height: 100px;
+                background-color: steelblue;
+
+                float: left;
+                margin-right: 20px;
+            }
+
+            .circleshape{
+                width: 100px;
+                height: 100px;
+                background-color: steelblue;
+                border-radius: 50%;
+                overflow: hidden;
+
+                float: left;
+                margin-right: 20px;
+
+                shape-outside: circle();
+
+                /* clip-path: circle(); */
+
+            }
+
+            .ellipseshpae{
+                width: 100px;
+                height: 100px;
+                background-color: steelblue;
+
+                clip-path: ellipse(50% 70%);
+                shape-outside: ellipse(50% 70%);
+
+                float: left;
+                margin-right: 20px;
+
+            }
+
+            .polygonshape{
+                width: 100px;
+                height: 100px;
+                background-color: steelblue;
+
+                clip-path: polygon(0% 0% 60%);
+                shape-outside: polygon(0% 0% 60%);
+
+                float: left;
+                margin-right: 20px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="square">Squrae</div>
+
+        <hr/>
+
+        <div class="circle">Circle</div>
+
+        <hr/>
+
+        <div class="triangle">Triangle</div>
+
+        <hr/>
+
+        <div class="triangle">Triangle</div>
+
+        <hr/>
+
+        <div>
+            <div class="squareshape">Square</div>
+            <p>Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.</p>
+        </div>
+
+        <hr/>
+
+        <div>
+            <div class="circleshape">Circle</div>
+            <p>Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.</p>
+        </div>
+
+        <hr/>
+
+        <div>
+            <div class="ellipseshpae">Ellipse</div>
+            <p>Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.</p>
+        </div>
+
+        <hr/>
+
+        <div>
+            <div class="polygonshape">Polygon</div>
+            <p>Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.Chelsea is the best team in the world.CHelsea is the best team in the world.</p>
+        </div>
+        
+
+
+        
+        
+    </body>
+</html>

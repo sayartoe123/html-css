@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button Effect</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style type="text/css">
+
+            body{
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btn{
+                background: #444;
+                color: #000;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                border: none;
+                padding: 25px 80px;
+                margin: 0 20px;
+
+                font-family: "Font Awesome 5 free";
+
+                cursor: pointer;
+
+                position: relative;
+            }
+
+            .download-btn{
+                background-color: steelblue;
+            }
+
+            .upload-btn{
+                background-color: violet;
+            }
+
+            .btn::before{
+                content: "";
+
+                width: 60px;
+                height: 100%;
+                /* background-color: green; */
+                font-size: 150%;
+                line-height: 3;
+
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                
+
+            }
+
+            .download-btn::before{
+                content: "\f019";
+                
+                background-color: steelblue;
+            }
+
+            .upload-btn::before{
+                content: "\f093";
+                background-color: blueviolet;
+            }
+
+            .download-btn:hover{
+                background-color: yellow;
+            }
+
+            .download-btn:active{
+                background-color: #444;
+            }
+
+            .upload-btn:hover{
+                background-color: rosybrown;
+            }
+
+            .upload-btn:active{
+                background-color: blanchedalmond;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <button type="button" class="btn download-btn">Download Button</button>
+        <button type="button" class="btn upload-btn">Download Button</button>
+    </body>
+</html>
